@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5501/xtra%20grid.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top {grid-area:top;}
+        .left {grid-area:left;}
+        .madil {grid-area:madil;}
+        .right {grid-area:right;}
+        .footer {grid-area:footer;}
+
+        .container {
+            display: grid;
+            background-color: rgb(249, 252, 252);
+            padding: 10px;
+            gap: 5px;
+        }
+        .container > div {
+            background-color: rgb(247, 244, 240);
+            padding: 10px;
+
+        }
+
+        .top {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+        }
+        .left {
+            grid-column: 1;
+            grid-row: 2 / span 3;
+            background-color: aqua;
+        }
+        .footer {
+            grid-column: 2 / span 2;
+            grid-row: 3;
+
+        }
+
+
+        .right {
+    width: 29%;
+    position: relative;
+    left: 43%;
+    text-align: justify;
+}
+
+/* index-place */
+
+
+.left {
+    height: 1100px;
+    width: 420px;
+    overflow: auto;
+    position: sticky;
+    top: 172px;
+}
+
+.contact {
+    padding-top: 30px;
+}
+
+
+.madil {
+    width: 30%;
+    position: relative;
+    left: 9%;
+    text-align: justify;
+}
+
+.top > img {
+    position: relative;
+    left: 600px;
+    padding: 10px;
+}
+
+.park-img {padding-top: 93px;}
+
+.park-img > img {
+    width: 520px;
+    border: 8px solid #1db8bb;
+    padding-top: 20px;
+    border-bottom: white;
+    border-right: white;
+    border-left: white;
+}
+
+.comm1-s {
+    display: flex;
+    border: 1px solid #8b7f7f;
+    border-left: white;
+    border-right: white;
+    border-top: white;
+}
+
+
+
+.comm1-s > p.p1 {
+    position: relative;
+    left: 342px;
+}
+
+.comm1-e {
+    display: flex;
+}
+
+.comm1-e > p.p1 {
+    position: relative;
+    left: 342px;
+}
+
+.madil-2 {
+    text-align: justify;
+    padding-top: 97px;
+}
+
+.w-man-img > img {
+    width: 520px;
+    border: 8px solid #0fa7a7;
+    padding-top: 20px;
+    border-bottom: white;
+    border-left: white;
+    border-right: white;
+}
+
+.comm2-s {
+    display: flex;
+    border: 3px solid #978787;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+}
+
+.comm2-s > p.p1 {
+    position: relative;
+    left: 351px;
+}
+
+.comm2-e {
+    display: flex;
+}
+
+.comm2-e > p.p1 {
+    position: relative;
+    left: 342px;
+}
+/* madil */
+
+.madil-3 {
+    padding-top: 120px;
+}
+
+.mobail > img {
+    width: 520px;
+    border: 8px solid #14bfbf;
+    padding-top: 20px;
+    border-bottom: white;
+    border-left: white;
+    border-right: white;
+}
+
+.comm3-s {
+    display: flex;
+    border: 3px solid #978c8c;
+    border-top: white;
+    border-right: white;
+    border-left: white;
+}
+
+.comm3-s > p.p1 {
+    position: relative;
+    left: 441px;
+}
+
+.comm3-e {
+    display: flex;
+}
+
+.comm3-e > p.p1 {
+    position: relative;
+    left: 342px;
+}
+
+.clamon > img {
+    width: 500px;
+    border: 8px solid #13b9b9;
+    padding-top: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.clamon {
+    padding-top: 24px;
+}
+
+.comm4-s {
+    display: flex;
+    border: 3px solid #9c8d8d;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.comm4-s > p.p1 {
+    position: relative;
+    left: 364px;
+}
+
+.comm4-e {
+    display: flex;
+}
+
+.comm4-e > p.p1 {
+    position: relative;
+    left: 319px;
+}
+
+.right2 {
+    padding-top: 113px;
+}
+img.srch {
+    position: relative;
+    left: 57px;
+    top: 18px;
+    width: 64px;
+}
+
+.search > a {
+    padding: 10px;
+    border: 1px solid #12b3ad;
+    padding-right: 258px;
+    position: relative;
+    left: 50px;
+    font-size: 36px;
+    text-decoration: none;
+    background-color: white;
+}
+
+
+
+.art > img {
+    width: 526px;
+    border: 8px solid #09a7a7;
+    padding-top: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.comm5-s {
+    display: flex;
+    border: 3px solid #937c7c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.comm5-s > p.p1 {
+    position: relative;
+    left: 330px;
+}
+
+.comm5-e {
+    display: flex;
+}
+
+.comm5-e > p.p1 {
+    position: relative;
+    left: 342px;
+}
+
+.right3 {
+    padding-top: 115px;
+}
+
+.juri > img {
+    width: 531px;
+    border: 8px solid #0aaca0;
+    padding-top: 20px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.comm6-s {
+    display: flex;
+    border: 3px solid #9c8b8b;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.comm6-s > p.p1 {position: relative;left: 331px;}
+
+.comm6-e {
+    display: flex;
+}
+
+.comm6-e > p.p1 {
+    position: relative;
+    left: 342px;
+}
+
+.xtra {
+    text-align: center;
+    padding-top: 114px;
+}
+
+.xtra > img {
+    border: 1px solid black;
+    padding: 15px 15px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.xtra > h2 {
+    font-size: 41px;
+}
+
+
+
+.contact > img {
+    width: 50px;
+}
+
+.contact > h2.h-4 {
+    position: relative;
+    left: 83px;
+    bottom: 60px;
+}
+
+.contact > h2.h-1 {
+    position: relative;
+    left: 83px;
+    bottom: 56px;
+}
+
+.contact > h2.h-2 {
+    position: relative;
+    left: 83px;
+    bottom: 60px;
+}
+
+.contact > h2.h-3 {
+    position: relative;
+    left: 83px;
+    bottom: 40px;
+}
+
+.contact:hover {
+    background-color: white;
+}
+
+.contact:hover {
+    border: 2px solid #979191;
+    position: relative;
+    box-shadow: 10px 10px grey;
+}
+.f-t-l-i > img {border: 1px solid aqua;padding-right: 10px;background-color: aqua;border-width: 18px;}
+
+.para > p {
+    color: white;
+}
+
+
+
+.footer1 {
+    padding-top: 100px;
+    display: flex;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.button {position: relative;left: 200px;top: 35px;}
+
+a.prev {border: 1px solid black;padding: 10px 43px;text-decoration: none;color: black;background-color: #ece5e5;font-size: 20px;}
+
+.page {
+    position: relative;
+    left: 1000px;
+}
+
+.page > a {
+    position: relative;
+    left: 59px;
+    bottom: 54px;
+    font-size: 30px;
+    text-decoration: none;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    padding: 5px 10px;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: #111010;
+    background-color: #f0e7e7;
+}
+
+.page > h4 {
+    font-size: 23px;
+}
+
+.page > a:hover {background-color: aqua;}
+
+a.next {
+    border: 1px solid black;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #0ddbdb;
+}
+
+.footer-comm {
+    padding-top: 48px;
+    display: flex;
+}
+
+.foot-comm2 {
+    position: relative;
+    left: 1100px;
+}
+
+.foot-comm1 {
+    position: relative;
+    left: 193px;
+}
+
+
+
+.footer-img > img {
+    position: relative;
+    left: 300px;
+}
+
+.footer-img {
+    padding-top: 106px;
+}
+
+.top {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+
+
+
+
+
+    </style>
+</head>     
+   
+<body>
+    
+    <div class="container">
+        <!-- section-one -->
+        <div class="top">
+            <img src="./xtra-free_files/img-01jpg.jpg" alt="">
+        </div>
+        <!-- section-2 -->
+        <div class="left" style="background-color: aqua;">
+            <div class="xtra">
+                <img src="./xtra-free_files/mark + and - img - Copy.jpg" alt="">
+                <h2>Xtra Blog</h2>
+            </div>
+
+
+            <div class="social">
+
+               <div class="contact">
+                <img src="./xtra-free_files/home icon.jpg" alt="">
+                <h2 class="h-1">Blog Home</h2>
+               </div>
+
+               <div class="contact">
+                <img src="./xtra-free_files/pen img.jpg" alt="">
+                <h2 class="h-2">Single Post</h2>
+               </div>
+
+               <div class="contact">
+                <img src="./xtra-free_files/social group img.jpg" alt="">
+                <h2 class="h-3">About Xtra</h2>
+               </div>
+
+               <div class="contact">
+                <img src="./xtra-free_files/social contect img.jpg" alt="">
+                <h2 class="h-4">Contact Us</h2>
+               </div>
+
+            </div>
+
+            <div class="f-t-l-i">
+                <img src="./xtra-free_files/fb.png" alt="">
+                <img src="./xtra-free_files/twitter.png" alt="">
+                <img src="./xtra-free_files/linkedin.png" alt="">
+                <img src="./xtra-free_files/instagram.png" alt="">
+            </div>
+
+            <div class="para">
+                <p>Xtra blog is a multi-purpose HTML <br>template from templatemo website. <br>Left side is a sticku menu bar. Rigjt <br> side content will scroll up and down. <br></p>
+            </div>
+
+
+        </div>                    
+
+        <!-- section-3 -->
+        <div class="madil">
+            <div class="madil-1">
+
+                <div class="park-img">
+                    <img src="./xtra-free_files/park img-1.jpg" alt="">
+                   <h2>simple and useful HTML lauout</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae deleniti obcaecati eaque nemo, dolorem hic nam provident quod maxime doloribus consequuntur vel suscipit, temporibus, saepe enim placeat similique laborum nobis porro aut iure. Veniam, unde.</p><br>
+                </div>
+                   <div class="comm1-s">
+                    <p class="p0">travel.Events</p><br>
+                    <p class="p1">June 24,2045</p>
+                   </div>
+                   <div class="comm1-e">
+                    <p class="p0"> 36 comments</p>
+                    <p class="p1">by Admin Nat</p>
+    
+                   </div>
+
+            </div>
+
+            <div class="madil-2">
+               <div class="w-man-img">
+                    <img src="./xtra-free_files/img-03 (1).jpg" alt="">
+                    <h2>How can you apply xtra Blog</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio id dolores nisi ipsa repudiandae consectetur laborum quo illo autem in ad inventore, placeat assumenda, cum repellendus ipsum suscipit debitis quaerat!</p><br>
+               </div>
+               <div class="comm2-s">
+                <p class="p0">Music.Audio</p>
+                <p class="p1">June11,2045</p>
+               </div>
+               <div class="comm2-e">
+                <p class="p0">24 comments</p>
+                <p class="p1">by john walker</p>
+               </div>
+
+            </div>
+
+            <div class="madil-3">
+                <div class="mobail">
+                    <img src="./xtra-free_files/img-05 (1).jpg" alt="">
+                    <h2>color hexa values <br>of xtra Blog</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nostrum ullam amet culpa tempora id laborum iusto perferendis, ab reprehenderit accusantium vero quos eos praesentium animi numquam nemo dolorum harum?</p>                    
+                </div>
+                <div class="comm3-s">
+                    <p class="p0">Audio</p>
+                    <p class="p1">2045</p>
+                </div>
+                <div class="comm3-e">
+                    <p class="p0">84 comments by</p>
+                    <p class="p1">Admin sam</p>
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- section-4 -->
+        <div class="right">
+            <div class="th-fo">
+                <div class="search">
+                    <a class="src" href="http://127.0.0.1:5501/xtra%20grid.html">Search..</a>
+                    <img class="srch" src="./xtra-free_files/search.jpg" alt="">
+                </div>
+                    <div class="right1">
+                <div class="clamon">
+                    <img src="./xtra-free_files/clamon img 2.jpg" alt="">
+                    <h2>Multi-purpose blog <br>template</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus cumque doloremque vitae alias numquam pariatur quisquam vero doloribus labore modi, voluptatem officia aliquid illo repellat dolores tenetur placeat nobis voluptatum.</p>
+                    <div class="comm4-s">
+                        <p class="p0">Business</p>
+                        <p class="p1">june,2045</p>
+                    </div>
+                    <div class="comm4-e">
+                        <p class="p0">48 comments</p>
+                        <p class="p1">by Admin sam </p>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="right2">
+                <div class="art">
+                    <img src="./xtra-free_files/img-04 (1).jpg" alt="">
+                    <h2>Quisque id ipsum vel turpis</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident, atque repudiandae, inventore qui maiores, veritatis quis sapiente aperiam alias eveniet ad reprehenderit tenetur pariatur architecto necessitatibus blanditiis possimus nemo.</p>
+                </div>
+                <div class="comm5-s">
+                    <p class="p0">Artworks.Design</p>
+                    <p class="p1">june 4,2045</p>
+                </div>
+                <div class="comm5-e">
+                    <p class="p0">72 comments</p>
+                    <p class="p1">by Admin sam </p>
+                </div>
+
+            </div>
+
+            <div class="right3">
+                <div class="juri">
+                    <img src="./xtra-free_files/img-06.jpg" alt="">
+                    <h2>Donec convallis varius risus</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime reprehenderit dignissimos incidunt harum porro earum, eius eos pariatur at repudiandae, mollitia magnam nulla atque itaque nam exercitationem cupiditate officiis officia!</p>
+                </div>
+                <div class="comm6-s">
+                    <p class="p0">visual.Artworks</p>
+                    <p class="p1">june 16,2045</p>
+
+                </div>
+                <div class="comm6-e">
+                    <p class="p0">96 comments</p>
+                    <p class="p1">by Admin sam </p>
+                </div>
+
+            </div>
+        </div>        
+      
+
+    </div>
+     <!-- section-5 -->
+     <div class="footer">
+        <div class="footer1">
+            <div class="button">
+                <a class="prev" href="http://127.0.0.1:5501/xtra%20grid.html#">prev</a>
+                <a class="next" href="http://127.0.0.1:5501/xtra%20grid.html#">Next</a>
+
+            </div>
+            <div class="page">
+                <h4>page</h4>
+                <a href="http://127.0.0.1:5501/www.xtra-blog.com">1</a>
+                <a href="http://127.0.0.1:5501/www.xtra-blog.com">2</a>
+                <a href="http://127.0.0.1:5501/www.xtra-blog.com">3</a>
+                <a href="http://127.0.0.1:5501/www.xtra-blog.com">4</a>
+            </div>
+        </div>
+        <div class="footer-comm">
+            <div class="foot-comm1">Design:Templatemo</div>
+            <div class="foot-comm2"> opyright 2045 Blog company co.ltd.</div>               
+        </div>
+        <div class="footer-img">
+            <img src="./xtra-free_files/img-01jpg.jpg" alt="">
+        </div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>
